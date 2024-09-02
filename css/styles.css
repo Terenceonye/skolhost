@@ -211,3 +211,95 @@ button[type="submit"]:hover {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+
+
+/* dashboard -welcome */
+
+.dashboard {
+    /* max-width: 400px; */
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.top-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Slider Styles */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Container holding the slides */
+.slides {
+    
+    display: flex;
+    transition: transform 1s ease; /* Smooth transition for sliding */
+}
+
+/* Individual slide */
+.slide {
+    color: var(--text-color);
+    background-color: var(--button-color);
+    height: 15vh;
+    min-width: 100%; /* Ensures each slide takes up the full container width */
+    box-sizing: border-box; /* Ensures padding/margins don't affect width */
+    transition: opacity 1s ease; /* Smooth opacity transition */
+    opacity: 0; /* Hide slides initially */
+
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+/* Active slide */
+.slide.active {
+    opacity: 1; /* Show active slide */
+}
+
+/* Slide out effect (Optional if you need to animate the exit of slides) */
+.slide-out {
+    animation: slideOut 1s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #e9ecef;
+    padding: 20px;
+    /* border-radius: 8px; */
+    text-align: center;
+}
+
+
