@@ -145,14 +145,9 @@ section {
 /* -----------------------------------------------------
 login section start
 ----------------------------------------------------- */
-/* Ensure container width on mobile */
-.login-container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.login h2 {
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Ensure inputs and button take full width */
@@ -164,22 +159,55 @@ button[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
-    box-sizing: border-box; /* Ensure padding and border are included in the total width */
-    margin-bottom: 10px; /* Add spacing between inputs */
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .input-group input:focus {
-    border-color: #007bff;
+    border-color: var(--button-color);
+}
+
+/* Password wrapper styles */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+/* Eye icon styles */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
 }
 
 /* Style the submit button */
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: var(--button-color);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: rgb(39, 39, 39);
+}
+
+/* Style for the "Forgotten password?" link */
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }

@@ -71,22 +71,25 @@
         <section id="login" class="login">
             <h4>Welcome To SKOLHOST</h4>
             <p class="text">Everything your SCHOOL needs in one place.</p>
-    
-            <div class="login-container">
-                <form class="login-form" action="your-login-endpoint" method="POST">
-                    <h2>Login</h2>
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-                    <div class="input-group">
-                        <label for="password">Password</label>
+        
+            <form class="login-form" action="your-login-endpoint" method="POST">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
                         <input type="password" id="password" name="password" required placeholder="Enter your password">
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
                     </div>
-                    <button type="submit">Login</button>
-                </form>
-            </div>
+                </div>
+                <a href="#" class="forgot-password">Forgotten password?</a>
+                <button type="submit">Login</button>
+            </form>
         </section>
+        
 
         <!-- <section id="intro2" class="intro2 section">
         
@@ -152,7 +155,7 @@
     </div>
 
 <!-- custom -->
- <!-- <script src="./css/script.js"></script> -->
+ <script src="./css/script.js"></script>
 <!-- aos init -->
 <!-- <script src="./css/aos.js"></script>       -->
 </body>
