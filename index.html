@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKOLHOST</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Include Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- <link rel="stylesheet" href="./css/aos.css"> -->
 </head>
 <body>
@@ -103,19 +106,100 @@
                     <div class="slide active">Slide 1: Important Update</div>
                     <div class="slide">Slide 2: New Feature</div>
                     <div class="slide">Slide 3: Tips & Tricks</div>
+                </div> 
+                <!-- Dot indicators -->
+                <div class="indicators-container">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>  
+            </div>
+            
+            
+            <div class="card-container">
+                <p>Explore academics</p>
+                <!-- Dashboard Cards -->
+                <div class="dashboard-cards">
+                    <div class="card">Homeword</div>
+                    <div class="card">Attendance</div>
+                    <div class="card">Performance</div>
+                    <div class="card">Result</div>
+                    <div class="card">Note</div>
+                    <div class="card">Debt</div>
                 </div>
             </div>
-    
-            <!-- Dashboard Cards -->
-            <div class="dashboard-cards">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 3</div>
-                <div class="card">Card 4</div>
-                <div class="card">Card 5</div>
-                <div class="card">Card 6</div>
+
+            <div class="top-board">
+                <div class="name">Upcoming Events</div>
+                <div>See all</div>
             </div>
+            <!-- Automatic Slider -->
+            <div class="sliderx">
+                <div class="slidesx">
+                    <div class="slidex activex">Slide 1: Important Update</div>
+                    <div class="slidex">Slide 2: New Feature</div>
+                    <div class="slidex">Slide 3: Tips & Tricks</div>
+                    <div class="slidex">Slide 4: Tips & Tricks</div>
+                </div> 
+                 <!-- Dot indicators -->
+                <div class="indicators-containerx">
+                    <span class="indicatorx activex"></span>
+                    <span class="indicatorx"></span>
+                    <span class="indicatorx"></span>
+                    <span class="indicatorx"></span>
+                </div>  
+            </div>
+           
         </section>
+
+        <section class="homework">
+            <div class="section-title">Homework</div>
+            <p>Select Student</p>
+
+            <div class="input-group">
+                <select id="options" name="options" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <button type="submit">Search</button>
+        </section>
+
+
+
+
+
+        <!-- Bottom Navigation Menu -->
+        <div class="bottom-nav">
+            <a href="#" class="nav-item">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="currentColor"/>
+            </svg>
+            <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 4H5a2 2 0 00-2 2v14h2v-2h14v2h2V6a2 2 0 00-2-2zm0 12H5V8h14v8z" fill="currentColor"/>
+            </svg>
+            <span>Calendar</span>
+            </a>
+            <a href="#" class="nav-item">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4a2 2 0 00-2 2v16l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" fill="currentColor"/>
+            </svg>
+            <span>Chat</span>
+            </a>
+            <a href="#" class="nav-item">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm-7 8c0-2.67 5.33-4 7-4s7 1.33 7 4v2H5v-2z" fill="currentColor"/>
+            </svg>
+            <span>Account</span>
+            </a>
+        </div>
+  
+        
     
 
         <!-- <section id="intro2" class="intro2 section">
