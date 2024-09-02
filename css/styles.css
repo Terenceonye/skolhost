@@ -46,8 +46,8 @@ section {
 
 
 .gradient-circle {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border-radius: 90%;
     background: radial-gradient(circle, #ff7f50, #ff4500);
     margin: auto;
