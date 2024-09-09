@@ -156,10 +156,9 @@ section {
     
 } */
 
-/* .getstarted {
-    
-    
-} */
+.getstarted {
+    text-wrap: nowrap;
+}
 
 
 
