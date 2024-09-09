@@ -194,7 +194,7 @@ button[type="submit"] {
     outline: none;
     box-sizing: border-box;
     margin-bottom: 10px;
-    height: 70px; /* Increased height */
+    height: 65px; /* Increased height */
 }
 
 .input-group input:focus{
@@ -457,7 +457,7 @@ h2 {
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    height: 70px;
+    height: 65px;
   }
 
   /* button inherits the button css used above */
