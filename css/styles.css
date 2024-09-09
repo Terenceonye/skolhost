@@ -480,14 +480,15 @@ h2 {
   /* Bottom Navigation Menu */
   .bottom-nav {
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
-    width: 100%;
+    right: 0;
     display: flex;
     justify-content: space-around; /* Space out the items evenly */
     background-color: var(--menu-color);
     border-top: 1px solid #ddd; /* Optional: adds a border line on top of the menu */
     padding: 10px 0;
+    margin: 0 5px;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a better visual */
     z-index: 1000; /* Ensure the menu is above other elements */
     
