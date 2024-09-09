@@ -15,7 +15,39 @@ function togglePasswordVisibility() {
 
 
 
+
+
+
+// DASHBOARD AND SLIDERS
+
+// cURRENT TME ON SLIDER
+
+// Function to display the date in the desired format without day suffix
+function displayDate() {
+    const myDate = document.getElementById('mydate');
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    const currentDate = new Date();
+    const day = currentDate.getDate().toString().padStart(2, '0'); // Ensures 2 digits for day
+    const month = months[currentDate.getMonth()];
+    const year = currentDate.getFullYear();
+    const weekday = days[currentDate.getDay()];
+
+    const formattedDate = `${day} ${month}, ${year} | ${weekday}`;
+
+    myDate.innerHTML = formattedDate;
+}
+
+
+
+
+// SLIDES AND SLIDER
 document.addEventListener("DOMContentLoaded", function () {
+    // display the calculated day
+    displayDate()
+
+
     const slides = document.querySelectorAll(".slide");
     const indicators = document.querySelectorAll(".indicator");
 

@@ -12,7 +12,8 @@
 }
 
 :root {
-    --button-color: #000000;
+    --button-color: #2681C0;
+    --menu-color: #000000;
     --text-color: #ffffff
 }
 
@@ -60,15 +61,22 @@ section {
 }
 
 /* Intro pages */
-
+.skip {
+    all: unset;
+    font-weight: bolder;
+    font-size: 20px;
+    float: right;
+    margin-bottom: 0.5rem;
+}
 
 .gradient-circle {
-    width: 300px;
-    height: 300px;
+    clear: right;
+    width: 100%;
+    /* height: 310px; */
     border-radius: 90%;
-    background: radial-gradient(circle, #ff7f50, #ff4500);
+    /* background: radial-gradient(circle, #ff7f50, #ff4500); */
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -121,23 +129,22 @@ section {
 }
 
 .intro-navigation {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    align-items: center;
     padding: 0 20px;
+    
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+
+    
 }
 
-.skip {
-    all: unset;
-    font-weight: bolder;
-    font-size: 18px;
-}
+
 
 .next {
     background-color: var(--button-color);
     color: var(--text-color);
-    padding: 10px 40px;
+    padding: 10px 100px;
     font-weight: bolder;
     font-size: 18px;
     border: none;
@@ -162,9 +169,22 @@ section {
 /* -----------------------------------------------------
 login section start
 ----------------------------------------------------- */
-.login h2 {
-    text-align: center;
+.login h3 {
+    text-align: left;
     font-weight: bold;
+    /* color: red; */
+    margin: 2rem 0 0.3rem 0;
+}
+
+.login p {
+    all: unset;
+    text-align: left;
+    /* margin-bottom: 3rem; */
+    
+}
+
+.login-form {
+    margin-top: 3rem;
 }
 
 /* Ensure inputs and button take full width */
@@ -249,6 +269,11 @@ button[type="submit"]:hover {
     margin-bottom: 1.5rem;
 }
 
+.top-board .name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -261,7 +286,7 @@ h2 {
     /* width: 100%;
     overflow: hidden; */
     border-radius: 10px;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -269,13 +294,14 @@ h2 {
 .slides, .slidesx {
     display: flex;
     transition: transform 1s ease; /* Smooth transition for sliding */
+    width: 100%;
 }
 
 
 /* Individual slide */
 .slide, .slidex {
     color: var(--text-color);
-    background-color: var(--button-color);
+    /* background-color: var(--button-color); */
     height: 180px;
     min-width: 100%; /* Ensures each slide takes up the full container width */
     box-sizing: border-box; /* Ensures padding/margins don't affect width */
@@ -283,14 +309,35 @@ h2 {
     opacity: 0; /* Hide slides initially */
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px 20px;
     border-radius: 10px;
+    row-gap: 7px;
+    text-align: left;
+}
+
+.slide {
+    background-image: url(./home-slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slidex {
+    background-image: url(./home-slide2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slidex p:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Active slide */
 .slide.active, .slidex.activex {
     opacity: 1; /* Show active slide */
+    text-align: left;
 }
 
 /* Dots Container */
@@ -367,12 +414,23 @@ h2 {
 }
 
 .dashboard-cards .card {
-    background-color: #e9ecef;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 10px;
     /* border-radius: 8px; */
-    text-align: center;
+    
     font-size: 3vw;
 }
+
+.card .icon {
+    margin-bottom: 10px; /* Space between icon and name */
+    width: 40px;
+    height: 40px;
+  }
+   
 
 
 /* Home work */
@@ -427,12 +485,14 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: space-around; /* Space out the items evenly */
-    background-color: var(--button-color);
+    background-color: var(--menu-color);
     border-top: 1px solid #ddd; /* Optional: adds a border line on top of the menu */
     padding: 10px 0;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a better visual */
     z-index: 1000; /* Ensure the menu is above other elements */
-  }
+    
+    border-radius: 20px;
+}
   
   /* Navigation Item */
   .nav-item {
