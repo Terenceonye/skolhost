@@ -507,7 +507,7 @@ h2 {
 }
 
 .scrollable-menu .menu-item.active::after {
-    content: 'sdfdsf';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
