@@ -129,6 +129,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// horizontal scrolling for Homework section
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll('.menu-item');
+    const assignmentCards = document.querySelectorAll('.assignment-card');
+
+    // Filter assignments based on the selected subject
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const filter = this.getAttribute('data-filter');
+
+            // Remove the active class from all menu items
+            menuItems.forEach(menu => menu.classList.remove('active'));
+            this.classList.add('active');
+
+            // Show/Hide assignments based on the selected subject
+            assignmentCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-subject') === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
+
+
+
+
+
+
+
 // mobile menu - for active state
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -213,18 +213,73 @@
         </section>
 
         <section class="homework">
-            <!-- <div class="section-title">Homework</div> -->
+            
+            <div class="section-title">
+                <div class="section-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span>Homework</span>
+            </div>
             <p>Select Student</p>
 
             <div class="input-group">
                 <select id="options" name="options" required>
-                  <option value="" disabled selected>Select an option</option>
+                  <option value="" disabled selected>Select One</option>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
                   <option value="option3">Option 3</option>
                 </select>
             </div>
             <button type="submit">Search</button>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <div class="section-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span>Homework</span>
+            </div>
+
+            <!-- Scrollable Menu -->
+        <div class="scrollable-menu">
+            <button class="menu-item active" data-filter="all">All</button>
+            <button class="menu-item" data-filter="english">English</button>
+            <button class="menu-item" data-filter="maths">Maths</button>
+            <button class="menu-item" data-filter="science">Basic Science</button>
+            <!-- Add more subjects as needed -->
+        </div>
+
+        <!-- Assignments List -->
+        <div class="assignments-list">
+            <div class="assignment-card" data-subject="english">
+                <h3>English</h3>
+                <p>Name: Literature Assignment</p>
+                <p>Date: 10/09/2024</p>
+                <p>Details: Read the first chapter of the book and summarize.</p>
+            </div>
+
+            <div class="assignment-card" data-subject="maths">
+                <h3>Maths</h3>
+                <p>Name: Algebra Problems</p>
+                <p>Date: 11/09/2024</p>
+                <p>Details: Solve the first 10 algebra problems in your workbook.</p>
+            </div>
+
+            <div class="assignment-card" data-subject="science">
+                <h3>Basic Science</h3>
+                <p>Name: Physics Experiment</p>
+                <p>Date: 12/09/2024</p>
+                <p>Details: Perform the motion experiment and record observations.</p>
+            </div>
+
+            <!-- Add more assignments as needed -->
+        </div>
+
         </section>
 
 
