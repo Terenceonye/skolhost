@@ -144,7 +144,7 @@ section {
 .next {
     background-color: var(--button-color);
     color: var(--text-color);
-    padding: 10px 100px;
+    padding: 15px 100px;
     font-weight: bolder;
     font-size: 18px;
     border: none;
@@ -152,17 +152,14 @@ section {
 }
 
 
-.started-box {
-    display: grid;
-    place-items: center;
-    padding: 0 20px;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-.getstarted {
-    padding: 10px 50px;
+/* .started-box {
     
-}
+} */
+
+/* .getstarted {
+    
+    
+} */
 
 
 
@@ -198,9 +195,10 @@ button[type="submit"] {
     outline: none;
     box-sizing: border-box;
     margin-bottom: 10px;
+    height: 70px; /* Increased height */
 }
 
-.input-group input:focus {
+.input-group input:focus{
     border-color: var(--button-color);
 }
 
@@ -231,7 +229,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover, .next:hover {
     background-color: rgb(39, 39, 39);
 }
 
@@ -433,7 +431,9 @@ h2 {
    
 
 
-/* Home work */
+/************************************************
+ Home work 
+ **************************************************/
 
 .homework {
     padding-bottom: 70px;
@@ -442,6 +442,7 @@ h2 {
 .homework > p {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .homework .input-group {
@@ -450,17 +451,14 @@ h2 {
     margin-bottom: 1rem;
   }
   
-.homework .input-group label {
-    margin-bottom: 0.5rem;
-    font-size: 14px;
-    color: #333;
-  }
+
   
   .homework .input-group select {
     padding: 0.5rem;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    height: 70px;
   }
 
   /* button inherits the button css used above */
